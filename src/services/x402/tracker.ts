@@ -63,7 +63,7 @@ export function formatX402Cost(): string {
       if (!byDomain[domain]) {
         byDomain[domain] = { count: 0, totalUSD: 0 }
       }
-      byDomain[domain].count += payment.count ?? 1
+      byDomain[domain].count += 1
       byDomain[domain].totalUSD += payment.amountUSD
     } catch {
       // Skip malformed URLs
