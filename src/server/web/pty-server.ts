@@ -221,7 +221,7 @@ interface AuthedRequest extends IncomingMessage {
   _authUser?: AuthUser;
 }
 
-const rateLimiter = new ConnectionRateLimiter();
+const rateLimiter = new ConnectionRateLimiter(100, 60000);
 const rateLimiterCleanup = setInterval(() => rateLimiter.cleanup(), 5 * 60_000);
 
 const wss = new WebSocketServer({

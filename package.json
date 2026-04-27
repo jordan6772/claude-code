@@ -1,6 +1,6 @@
 {
   "name": "@anthropic-ai/claude-code",
-  "version": "0.0.0-leaked",
+  "version": "1.0.24",
   "description": "Anthropic Claude Code CLI — leaked source (2026-03-31). Not an official release.",
   "license": "UNLICENSED",
   "private": true,
@@ -86,7 +86,7 @@
     "proper-lockfile": "^4.1.2",
     "qrcode": "^1.5.0",
     "react": "^19.0.0",
-    "react-reconciler": "^0.31.0",
+    "react-reconciler": "^0.33.0",
     "semver": "^7.6.0",
     "stack-utils": "^2.0.6",
     "strip-ansi": "^7.1.0",

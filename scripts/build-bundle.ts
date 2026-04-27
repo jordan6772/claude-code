@@ -165,7 +165,7 @@ const buildOptions: esbuild.BuildOptions = {
   // Alias bun:bundle to our runtime shim + stub for native addons not in this build
   alias: {
     'bun:bundle': resolve(ROOT, 'src/shims/bun-bundle.ts'),
-    'color-diff-napi': resolve(ROOT, 'src/shims/color-diff-napi.ts'),
+    'color-diff-napi': resolve(ROOT, 'src/native-ts/color-diff/index.ts'),
   },
 
   // Don't bundle node built-ins or problematic native packages

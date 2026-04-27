@@ -114,7 +114,7 @@ export const nodejsHeapUsedBytes = new Gauge({
 });
 
 export const eventLoopLagSeconds = new Histogram({
-  name: "nodejs_eventloop_lag_seconds",
+  name: "app_eventloop_lag_seconds",
   help: "Event-loop lag sampled every 500 ms",
   buckets: [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1],
   registers: [registry],
